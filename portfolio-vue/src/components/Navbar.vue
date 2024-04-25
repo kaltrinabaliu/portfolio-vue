@@ -9,12 +9,17 @@
         <li class="p-5"><a href="#contact">Contact</a></li>
       </ul>
       <div @click="handleNav" class="block md:hidden">
-        <template v-if="nav">
-          <!-- <AiOutlineClose size="20" /> -->
-        </template>
-        <template v-else>
-          <!-- <AiOutlineMenu size="20" /> Ensure FcMenu is imported and used correctly here -->
-        </template>
+        <!--  close icon -->
+      
+      <svg v-if=nav stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" fill-rule="evenodd" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M799.855 166.312c.023.007.043.018.084.059l57.69 57.69c.041.041.052.06.059.084a.118.118 0 0 1 0 .069c-.007.023-.018.042-.059.083L569.926 512l287.703 287.703c.041.04.052.06.059.083a.118.118 0 0 1 0 .07c-.007.022-.018.042-.059.083l-57.69 57.69c-.041.041-.06.052-.084.059a.118.118 0 0 1-.069 0c-.023-.007-.042-.018-.083-.059L512 569.926 224.297 857.629c-.04.041-.06.052-.083.059a.118.118 0 0 1-.07 0c-.022-.007-.042-.018-.083-.059l-57.69-57.69c-.041-.041-.052-.06-.059-.084a.118.118 0 0 1 0-.069c.007-.023.018-.042.059-.083L454.073 512 166.371 224.297c-.041-.04-.052-.06-.059-.083a.118.118 0 0 1 0-.07c.007-.022.018-.042.059-.083l57.69-57.69c.041-.041.06-.052.084-.059a.118.118 0 0 1 .069 0c.023.007.042.018.083.059L512 454.073l287.703-287.702c.04-.041.06-.052.083-.059a.118.118 0 0 1 .07 0Z">
+      </path>
+    </svg>
+          <!--  menu icon -->
+      <svg v-if=!nav stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+        <path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
+      </path>
+    </svg>
       </div>
       <div :class="nav ? 'z-10 text-gray-300 fixed h-full left-0 top-0 w-[60%] border-r border-r-gray-900 bg-[#202121] ease-in-out duration-500' : 'fixed left-[-100%]'">
         <h1 class="text-3xl font-bold primary-color m-4">A.PARK</h1>
@@ -30,13 +35,11 @@
   </template>
 
 <script>
-// import {AiOutlineClose, AiOutlineMenu} from 'react-icons/ai';
 
 export default {
   name: "TheNavbar",
   components: {
-    // AiOutlineClose,
-    // AiOutlineMenu
+    
   },
   data() {
     return {
