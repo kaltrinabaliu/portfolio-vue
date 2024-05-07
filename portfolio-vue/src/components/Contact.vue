@@ -8,7 +8,7 @@
                     <h1 className="text-4xl sm:text-5xl text-white">
                         Contact <span>Me</span>
                     </h1>
-                    <p className="text-normal text-lg  text-gray-400 mt-2">
+                    <p className="text-lg  text-gray-400 mt-2">
                         Let's connect on LinkedIn <br />or sen me an Email
                     </p>
                     <div className="flex items-center mt-2 text-gray-400">
@@ -26,16 +26,16 @@
 
                 <form action="https://getform.io/f/jawxvdkb" method="post" className="p-6 flex flex-col justify-center max-w-[700px]">
                     <div className="flex flex-col">
-                        <input type="name" name="name" id="name" placeholder='Full Name' className="w-100 mt-2 p-3 rounded-lg bg-gray-800 border-gray-700 text-white" />
+                        <input type="text" name="name" id="name" placeholder='Full Name' className="w-100 mt-2 p-3 rounded-lg bg-gray-800 border-gray-700 text-white focus:border-blue-800 focus:ring-blue-900" />
                     </div>
                     <div className="flex flex-col">
-                        <input type="email" name="email" id="email" placeholder='Email' className="w-100 mt-2 p-3 rounded-lg bg-gray-800 border-gray-700 text-white" />
+                        <input type="email" name="email" id="email" placeholder='Email' className="w-100 mt-2 p-3 rounded-lg bg-gray-800 border-gray-700 text-white focus:border-blue-800 focus:ring-blue-900" />
                     </div>
                     <div className="flex flex-col">
-                        <input type="message" name="message" id="message" placeholder='Your Message' className="w-100 mt-2 p-3 rounded-lg bg-gray-800 border-gray-700 text-white" />
+                        <input type="text" name="message" id="message" placeholder='Your Message' className="w-100 mt-2 p-3 rounded-lg bg-gray-800 border-gray-700 text-white  focus:border-blue-800 focus:ring-blue-900" />
                     </div>
 
-                    <button type='submit' className="bg-primary-color text-white py-3 rounded-lg mt-3">
+                    <button type='submit' className="bg-purple-700 hover:bg-purple-800 active:bg-purple-900 text-white py-3 rounded-lg mt-3 focus:outline-none focus:ring-2 focus:ring-purple-300">
                         Submit
                     </button>
                 </form>

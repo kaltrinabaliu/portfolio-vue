@@ -12,7 +12,7 @@
         </div>
       </div>
 
-      <div class="grid gap-4 md:grid-cols-3 sm:grid-cols-2 md:gap-6 xl:gap-8">
+      <div class="grid gap-3 md:grid-cols-3 sm:grid-cols-1 md:gap-6 xl:gap-8">
         <a
           href="/"
           class="group h-48 overflow-hidden rounded-lg shadow-lg md:h-80"
