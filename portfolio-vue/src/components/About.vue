@@ -1,7 +1,7 @@
 <template>
   <div className="py-10 text-white bg-[#232325] h-auto" id="about">
     <div
-      className="flex sm:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto"
+      className="flex md:flex-row flex-col-reverse items-center md:gap-6 gap-12 px-10 max-w-6xl mx-auto"
     >
       <div className="md:w-[1100px] sm:w-[400px] h-full">
         <img
@@ -27,15 +27,15 @@
           </div>
         </div>
 
-        <div className="flex mt-10 items-center gap-7">
-          <div className="bg-[#333333]/40 p-5 rounded-lg">
+        <div className="flex mt-10 items-center md:gap-7 gap-1">
+          <div className="bg-[#333333]/40 lg:p-5 sm:p-[27px] rounded-lg">
             <h3 className="md:text-4xl text-2xl font-semibold text-white">
               11
               <span>+</span>
             </h3>
             <p><span className="md:text-base text-xs">Projects</span></p>
           </div>
-          <div className="bg-[#333333]/40 p-5 rounded-lg">
+          <div className="bg-[#333333]/40 lg:p-5 p-4 rounded-lg">
             <h3 className="md:text-4xl text-2xl font-semibold text-white">
               5
               <span>+</span>
@@ -44,7 +44,7 @@
               <span className="md:text-base text-xs">years experience</span>
             </p>
           </div>
-          <div className="bg-[#333333]/40 p-5 rounded-lg">
+          <div className="bg-[#333333]/40 lg:p-5 p-4 rounded-lg">
             <h3 className="md:text-4xl text-2xl font-semibold text-white">
               30
               <span>+</span>

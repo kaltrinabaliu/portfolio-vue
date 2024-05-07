@@ -3,7 +3,7 @@
       <div class="my-7 sm:my-0 max-w-[1200px] h-[80vh] mx-auto flex flex-col-reverse sm:flex-row justify-center align-center" id="home">
         <div class="flex-col my-auto mx-auto md:mx-0">
           <p class="md:text-5xl sm:text-4xl text-xl font-bold text-gray-200">Hi! I am Ariana</p>
-          <h1 class="md:text-7xl sm:text-6xl text-4xl font-bold md:py-6">
+          <h1 class="md:text-5xl sm:text-6xl text-4xl font-bold md:py-6">
             <span>{{ currentText }}</span>
           </h1>
           <div class="flex justify-center items-center">
