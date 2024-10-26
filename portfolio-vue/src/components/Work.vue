@@ -7,7 +7,7 @@
             My <span>Projects</span>
           </h2>
           <p class="text-gray-500">
-            These are my latest projects for different clients.
+            These are my latest projects.
           </p>
         </div>
       </div>

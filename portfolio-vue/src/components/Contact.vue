@@ -1,6 +1,13 @@
+<script>
+export default{
+    name:"TheContact"
+}
+
+</script>
+
 <template>
-  <div className="flex justify-center my-5 h-full sm:h-[70vh] items-center" id='contact'>
-        <div className="max-w-[1200px] mx-auto">
+  <div className="flex justify-center my-5 h-full sm:h-[70vh] items-center bg-[#232325]" id='contact'>
+        <div className="max-w-[1200px] mx-auto my-10">
                 <div className="grid grid-cols-1 md:grid-cols-2">
 
 
@@ -9,7 +16,7 @@
                         Contact <span>Me</span>
                     </h1>
                     <p className="text-lg  text-gray-400 mt-2">
-                        Let's connect on LinkedIn <br />or sen me an Email
+                        Let's connect on LinkedIn <br />or sent me an Email
                     </p>
                     <div className="flex items-center mt-2 text-gray-400">
                         <div className='text-2xl'>
@@ -19,7 +26,7 @@
                             </svg>
                         </div>
                         <div className="ml-4 text-md tracking-wide font-semibold w-40">
-                            <p>Ariana Park</p>
+                            <p>Kaltrinë Baliu</p>
                         </div>
                     </div>
                 </div>
@@ -45,13 +52,3 @@
     </div>
 </template>
     
-    <script>
-    export default{
-        name:"TheContact"
-    }
-    
-    </script>
-    <style>
-    
-        
-    </style>

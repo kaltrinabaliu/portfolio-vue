@@ -1,6 +1,16 @@
+<script setup>
+  import { ref } from 'vue'
+
+  const nav = ref <Boolean>(false);
+
+  const handleNav = () =>{
+    nav.value = !nav.value
+  }
+
+</script>
 <template>
   <div class="relative z-10 text-gray-500 flex justify-between items-center max-w-[1240px] mx-auto h-24 px-4 text-lg">
-    <h1 class="text-3xl font-bold primary-color ml-4">A.PARK</h1>
+    <h1 class="text-3xl font-bold primary-color ml-4">K.BALIU</h1>
     <ul class="hidden md:flex">
       <li class="p-5"><a href="#home">Home</a></li>
       <li class="p-5"><a href="#about">About</a></li>
@@ -9,14 +19,12 @@
       <li class="p-5"><a href="#contact">Contact</a></li>
     </ul>
       <div @click="handleNav" class="block md:hidden">
-          <!--  menu icon -->
       <svg v-if=!nav stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
         <path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
       </path>
     </svg>
       </div>
 
-     <!-- Overlay div -->
     <div v-if="nav" @click="handleNav" class="fixed top-0 left-0 bottom-0 w-full bg-black opacity-50 md:hidden ease-in-out duration-500"></div>
     <div :class="nav ? 'z-10 text-gray-300 fixed h-full right-0 top-0 w-[60%] border-r border-r-gray-900 bg-black/[.9] ease-in-out duration-500' : 'fixed right-[-100%]'">
       <div @click="handleNav" class="flex justify-start items-center mx-7 my-8">  
@@ -36,28 +44,5 @@
   </div>
   </template>
 
-<script>
 
-export default {
-  name: "TheNavbar",
-  components: {
-    
-  },
-  data() {
-    return {
-      nav: false
-    };
-  },
-  methods: {
-    handleNav() {      
-      console.log(this.nav);
 
-      this.nav = !this.nav;
-    }
-  }
-};
-</script>
-
-<style>
-
-</style>
