@@ -6,7 +6,7 @@
     <Work></Work>
     <Experience></Experience>
     <MyEducation></MyEducation>
-    <Contact></Contact>
+    <ContactForm></ContactForm>
     <Footer></Footer>
 
   </div>
@@ -14,7 +14,7 @@
 
 <script>
 import About from "./components/About.vue";
-import Contact from "./components/Contact.vue";
+import ContactForm from "./components/Contact.vue";
 import Experience from "./components/Experience.vue";
 import Footer from "./components/Footer.vue";
 import HeroSection from "./components/HeroSection.vue";
@@ -30,7 +30,7 @@ export default {
     Work,
     Experience,
     MyEducation,
-    Contact,
+    ContactForm,
     Footer
   },
 };

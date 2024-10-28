@@ -38,7 +38,7 @@
           class="group h-48 overflow-hidden rounded-lg shadow-lg md:col-span-2 md:h-80"
         >
           <img
-            v-bind:src="proj3"
+            v-bind:src="proj4"
             alt=""
             class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
           />
@@ -48,7 +48,7 @@
           class="group h-48 overflow-hidden rounded-lg shadow-lg md:h-80"
         >
           <img
-            v-bind:src="proj4"
+            v-bind:src="proj3"
             alt=""
             class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
           />
