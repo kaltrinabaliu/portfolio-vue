@@ -1,3 +1,22 @@
+<script>
+import proj1 from "../assets/proj1.jpg";
+import proj2 from "../assets/proj2.jpg";
+import proj3 from "../assets/drini.jpg";
+import proj4 from "../assets/proj3.jpg";
+
+export default {
+  name: "TheWork",
+  components: {},
+  data() {
+    return {
+      proj1: proj1,
+      proj2: proj2,
+      proj3: proj3,
+      proj4: proj4,
+    };
+  },
+};
+</script>
 <template>
   <div class="py-6 max-w-[1200px] mx-auto" id="work">
     <div class="mx-auto px-4 md:px-8">
@@ -28,7 +47,7 @@
           class="group h-48 overflow-hidden rounded-lg shadow-lg md:col-span-2 md:h-80"
         >
           <img
-            v-bind:src="proj1"
+            v-bind:src="proj3"
             alt=""
             class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
           />
@@ -38,7 +57,7 @@
           class="group h-48 overflow-hidden rounded-lg shadow-lg md:col-span-2 md:h-80"
         >
           <img
-            v-bind:src="proj4"
+            v-bind:src="proj1"
             alt=""
             class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
           />
@@ -48,7 +67,7 @@
           class="group h-48 overflow-hidden rounded-lg shadow-lg md:h-80"
         >
           <img
-            v-bind:src="proj3"
+            v-bind:src="proj4"
             alt=""
             class="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
           />
@@ -58,23 +77,4 @@
   </div>
 </template>
 
-<script>
-import proj1 from "../assets/proj1.jpg";
-import proj2 from "../assets/proj2.jpg";
-import proj3 from "../assets/proj3.jpg";
-import proj4 from "../assets/proj4.jpg";
 
-export default {
-  name: "TheWork",
-  components: {},
-  data() {
-    return {
-      proj1: proj1,
-      proj2: proj2,
-      proj3: proj3,
-      proj4: proj4,
-    };
-  },
-};
-</script>
-<style></style>

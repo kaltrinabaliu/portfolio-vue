@@ -1,3 +1,9 @@
+<script>
+export default{
+    name:"TheFooter"
+}
+
+</script>
 <template>
     <div className="mt-12 w-max-[800px] border-t border-gray-500 text-center">
         <p className="my-5 text-gray-500">Prishtinë, Kosovë</p>
@@ -23,13 +29,4 @@
     </div>
         </template>
     
-    <script>
-    export default{
-        name:"TheFooter"
-    }
-    
-    </script>
-    <style>
-    
-        
-    </style>
+

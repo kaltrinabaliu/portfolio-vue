@@ -8,7 +8,7 @@ body{
   }
   
   span, .primary-color{
-    background-image: linear-gradient(to right, #dd32f3, #ce90cb);
+    background-image: linear-gradient(to right, #5652bc, #9bbadc);
     -webkit-background-clip: text;
     color:transparent;
   }
